@@ -10,3 +10,6 @@ export default function bubble_sort(arr: number[]): void {
         }
     }
 } 
+
+//Bubble sort has O(N^2)
+// (n-1)(n-2)(n-3).....+1 = (n^2 - n) / 2 = n^2 - n ~ n^2
