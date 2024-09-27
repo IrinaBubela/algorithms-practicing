@@ -29,7 +29,7 @@ export default class Queue<T> {
         if (!this.head) {
             return undefined;
         }
-
+        var i = 0;
         this.length--;
         const head = this.head;
         this.head = this.head.next;
@@ -41,6 +41,6 @@ export default class Queue<T> {
     }
 
     peek(): T | undefined {
-        return this.head?.value; 
+        return this.head?.value;
     }
 }
